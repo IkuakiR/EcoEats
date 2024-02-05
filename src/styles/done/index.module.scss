@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Kiwi+Maru&display=swap');
+
+@mixin fontSet {
+    font-family: 'Kiwi Maru', serif;
+    color: #10c500;
+}
+
+.body {
+    width: 100%;
+    height: 100vh;
+    background-color: #f2f2f2;
+    overflow: hidden;
+}
+
+.logo {
+    width: 82px;
+    height: 47px;
+    margin-top: 61px;
+    margin-left: 22px;
+}
+
+.checkMark {
+    width: 60px;
+    height: 60px;
+    margin: 60px auto 0;
+}
+
+.done {
+    font-size: 22px;
+    @include fontSet;
+    text-align: center;
+    margin: 20px;
+}
+
+.pageChange {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .excla {
+        width: 18px;
+        height: 18px;
+    }
+
+    p {
+        width: auto;
+        height: 18px;
+        font-size: 14px;
+        margin: 0 0 3px 5px;
+        @include fontSet;
+    }
+}
+
+.ifDont {
+    font-size: 14px;
+    @include fontSet;
+    text-align: center;
+    margin-top: 23px;
+}

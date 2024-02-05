@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Kiwi+Maru&display=swap');
+
+@mixin fontSet {
+    font-family: 'Kiwi Maru', serif;
+    color: #10c500;
+}
+
+.body {
+    width: 100%;
+    height: 100vh;
+    background-color: #f2f2f2;
+    overflow: hidden;
+}
+
+.logo {
+    width: 82px;
+    height: 47px;
+    margin-top: 61px;
+    margin-left: 22px;
+}
+
+.letsGo {
+    font-size: 22px;
+    @include fontSet;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.plzChoice {
+    font-size: 16px;
+    @include fontSet;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.choiceImg {
+    width: 100%;
+    height: 330px;
+    display: flex;
+    margin-top: 15px;
+
+    .foods {
+        width: 138px;
+        height: 330px;
+        // border: 1px solid #333;
+
+        p {
+            font-size: 12px;
+            @include fontSet;
+            color: rgba(86, 86, 86, 0.40);
+            ;
+            text-align: center;
+            margin-top: 15px;
+        }
+
+        .meat {
+            color: #10c500;
+        }
+
+        // overflow: hidden;
+
+        .foodsImg {
+            width: 138px;
+            height: 330px;
+            object-fit: cover;
+
+            &:first-child {
+                object-position: right;
+            }
+
+            &:nth-child(2) {
+                transform: rotate(90deg);
+                object-fit: cover;
+            }
+        }
+    }
+}

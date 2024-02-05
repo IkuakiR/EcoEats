@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Kiwi+Maru&display=swap');
+
+.body {
+    width: 100%;
+    height: 100vh;
+    background-color: #f2f2f2;
+}
+
+
+.regiTop {
+    position: relative;
+    height: 268px;
+
+    .topImg {
+        width: 100%;
+        height: auto;
+        /* 高さを自動設定 */
+        position: absolute;
+        /* 絶対位置指定 */
+        top: -46px;
+        /* 画像を上に移動 */
+        clip-path: inset(40px 0 0 0);
+        /* 上部から40px分をクリップ */
+    }
+}
+
+.howToRage {
+    display: flex;
+    background-color: #fff;
+    border-radius: 0 0 30px 30px;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+    overflow: hidden;
+
+    button {
+        font-size: 18px;
+        font-family: 'Kiwi Maru', serif;
+        width: 207px;
+        height: 55px;
+        color: #333;
+    }
+
+    .signUp {
+        position: relative;
+
+        &::after {
+            content: "";
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            transform: translateX(-50%);
+            height: 3px;
+            width: 65%;
+            border-radius: 100vh;
+            background: #10c500;
+
+        }
+
+    }
+}
+
+.regiForm {
+    width: 314px;
+    flex-flow: column;
+    margin: auto;
+    margin-top: 50px;
+
+
+    p {
+        font-size: 15px;
+        font-family: 'Kiwi Maru', serif;
+        color: #000;
+        opacity: 0.4;
+        margin-bottom: 5px;
+    }
+
+    input {
+        display: flex;
+        justify-content: center;
+        width: 314px;
+        border-bottom: 0.5px solid #000;
+        color: #333;
+        background-color: #f2f2f2;
+        // border-radius: 8px;
+        // box-shadow: inset 0 0 4px #00000020;
+        // opacity: 0.4;
+        margin-bottom: 15px;
+
+        &::placeholder {
+            font-size: 13px;
+        }
+    }
+}
+
+.toNext {
+    font-family: 'Kiwi Maru', serif;
+}

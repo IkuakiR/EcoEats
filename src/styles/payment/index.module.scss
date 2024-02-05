@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Kiwi+Maru&display=swap');
+
+@mixin fontSet {
+    font-family: 'Kiwi Maru', serif;
+    color: #10c500;
+}
+
+.body {
+    width: 100%;
+    height: 100vh;
+    background-color: #f2f2f2;
+    overflow: hidden;
+}
+
+.logo {
+    width: 82px;
+    height: 47px;
+    margin-top: 61px;
+    margin-left: 22px;
+}
+
+.letsGo {
+    font-size: 22px;
+    @include fontSet;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.plzChoice {
+    font-size: 16px;
+    @include fontSet;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.paymentOptions {
+    font-size: 16px;
+    @include fontSet;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    margin-top: 60px;
+    margin-left: 34px;
+    color: #10c500;
+
+    .newCardButton {
+        width: 156px;
+        height: 35px;
+        border-radius: 10px;
+        background: #10c500;
+        font-family: 'Kiwi Maru', serif;
+        font-size: 14px;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        transition: color 0.3s ease-in-out;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 40px;
+        margin-top: 5px;
+    }
+
+    .paymentOption {
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+
+        .indicator {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            border: 2px solid #10c500;
+            margin-right: 10px;
+
+            &.selected {
+                background-color: #10c500;
+            }
+        }
+
+        .toggle {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            border: 2px solid #10c500;
+            margin-right: 10px;
+            cursor: pointer;
+
+            &.selected {
+                background-color: #10c500;
+            }
+        }
+
+    }
+}
