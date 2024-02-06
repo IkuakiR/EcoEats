@@ -1,3 +1,4 @@
+import React, { useState } from "react";
 import Link from 'next/link'
 import style from '@/styles/month/index.module.scss'
 import Image from "next/image";
@@ -17,8 +18,8 @@ export default function Done() {
 
                 <img className={style.calender} src="/img/calender.png" alt="calender" />
 
-                <div className={style.toNext} 
-                onClick={ () => location.href = '/foodchoice'}>
+                <div className={style.toNext}
+                    onClick={() => location.href = '/foodchoice'}>
                     <Button text='次へ' />
                 </div>
             </div>
