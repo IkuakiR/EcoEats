@@ -3,6 +3,7 @@ import Link from 'next/link'
 import style from '@/styles/month/index.module.scss'
 import Image from "next/image";
 import Button from '@/components/template/Button'
+import Datepicker from '@/components/template/Datepicker'
 
 export default function Done() {
     return (
@@ -16,7 +17,10 @@ export default function Done() {
                 <p className={style.plzChoice}>一ヶ月に受け取る日と時間を選択してください。<br />
                     これは後からでも変更できます。</p>
 
-                <img className={style.calender} src="/img/calender.png" alt="calender" />
+                {/* <img className={style.calender} src="/img/calender.png" alt="calender" /> */}
+                <div className={style.datepic}>
+                    <Datepicker />
+                </div>
 
                 <div className={style.toNext}
                     onClick={() => location.href = '/foodchoice'}>

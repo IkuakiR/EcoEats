@@ -1,17 +1,23 @@
 import React, { useState } from "react";
 import "react-modern-calendar-datepicker/lib/DatePicker.css";
-import { Calendar } from "react-modern-calendar-datepicker";
+import { Calendar, DayValue } from "react-modern-calendar-datepicker";
 
-const App = () => {
-    // ✅ a change in default state: []
-    const [selectedDays, setSelectedDays] = useState([]);
+const Datepicker = () => {
+    const [selectedDay, setSelectedDay] = useState([]);
+
+    const handleDateChange = (selectedDate: DayValue) => {
+        setSelectedDay(selectedDate);
+        // 選択された日付の処理をここに追加
+        console.log("Selected date:", selectedDate);
+    };
+
     return (
         <Calendar
-            value={selectedDays}
-            onChange={setSelectedDays}
+            value={selectedDay}
+            onChange={handleDateChange}
             shouldHighlightWeekends
         />
     );
 };
 
-export default App;
+export default Datepicker;
